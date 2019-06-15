@@ -8,7 +8,7 @@
 					<div class="template-header-bottom">
 						<?php Template::includeFile('slider'); ?>
 					</div>
-					
+
 				</div>
 
 				<!-- Content -->
@@ -16,94 +16,49 @@
 
 					<!-- Section -->
 					<div class="template-section template-section-padding-1 template-clear-fix template-main">
-						
+
 						<!-- Header + subheader -->
 						<div class="template-component-header-subheader">
-							<h2>Who Is Autospa</h2>
+							<h2>Our Story</h2>
 							<div></div>
-							<span>Car wash &amp; detailling service</span>
-						</div>	
-						
+							<span>Car detailling at its best!</span>
+						</div>
+
 						<!-- Layout 33x66% -->
 						<div class="template-layout-33x66 template-clear-fix">
-							
-							<!-- Left column -->
-							<div class="template-layout-column-left">
-								<img src="media/image/sample/460x678/image_01.jpg" alt=""/>
-							</div>
-							
+
 							<!-- Right column -->
-							<div class="template-layout-column-right">
-								
+							<div class="template-layout-column-right" style="width: 100%; text-align: center;">
+
 								<!-- Text -->
 								<p class="template-padding-reset">
-									Autospa Hand Wash is an eco-friendly, hand car wash and detailing service based in Portland. 
-									Our company was founded back in 2005 by a team of experts with more then 10 years of professional car wash experience. 
-									We operate three car washes throught Portland area. Our goal is to provide our customers with the friendliest, most convenient 
-									hand car wash experience possible. We use the most modern and up-to-date water reclamation modules as a part of our car wash systems. 
-									Our products are all biodegradable and eco-friendly.
-								</p>
-																
-								<!-- Feature list -->
-								<div class="template-component-feature-list template-component-feature-list-position-top template-clear-fix">
-									
-									<!-- Layout 50x50% -->
-									<ul class="template-layout-50x50 template-clear-fix">
-										
-										<!-- Left column -->
-										<li class="template-layout-column-left template-margin-bottom-reset">
-											<div class="template-component-space template-component-space-2"></div>
-											<span class="template-icon-feature-water-drop"></span>
-											<h5>The Best Car Wash</h5>
-											<ul class="template-component-list">
-												<li><span class="template-icon-meta-check"></span>We offer multiple services at a great value</li>
-												<li><span class="template-icon-meta-check"></span>Multiple car wash locations throughout Portland</li>
-												<li><span class="template-icon-meta-check"></span>Biodegradable and eco-friendly products</li>
-												<li><span class="template-icon-meta-check"></span>Pay for your wash electronically and securely</li>
-												<li><span class="template-icon-meta-check"></span>Trained and skilled car wash crew members</li>
-											</ul>
-										</li>
-										
-										<!-- Right column -->
-										<li class="template-layout-column-right template-margin-bottom-reset">
-											<div class="template-component-space template-component-space-2"></div>
-											<span class="template-icon-feature-user-chat"></span>
-											<h5>Contacting Us</h5>
-											<ul class="template-component-list">
-												<li><span class="template-icon-meta-check"></span>We are very open and easy to reach company</li>
-												<li><span class="template-icon-meta-check"></span>Our email is checked hourly during the day</li>
-												<li><span class="template-icon-meta-check"></span>Book an appointment online under 3 minutes</li>
-												<li><span class="template-icon-meta-check"></span>Our tool free number will be answered</li>
-												<li><span class="template-icon-meta-check"></span>You can pay online for your appointment</li>
-											</ul>											
-										</li>
-										
-									</ul>
-									
-								</div>
-								
+									Wet Werks Detail, LLC. has been established in TN.  We pride ourselves on customer service and building relationships with our clients who in turn become part of our family.  Started out as a small auto detailing company has hope to become a full-fledged, full service detailing center.</p>
+								<p class="template-padding-reset" style="margin-top: 10px;">Our mission is to consistently provide quality service and workmanship to our clients.  We provide our residential accounts with a friendly, professional, and specialized service to their vehicles. We offer services such as; Full Detailing, Interior, and Exterior packages. Make your one stop detail shop.</p>
+								<p class="template-padding-reset" style="margin-top: 10px;">We maintain accounts ranging from the classic cars, daily drivers, motorcycles, and muscle cars. No job is too big or small. We are a year-round business operating Mon – Sun. by appointment. Also open most holidays as well to assist in customer details needs.</p>
+								<p class="template-padding-reset" style="margin-top: 10px;">The staff at Wet Werks Detail, is committed to customer service, and a positive experience you can tell your friends and family about.   We welcome everyone to try our services, and see first-hand.</p>
+
 							</div>
-								
+
 						</div>
-						
+
 					</div>
-					
+
 					<!-- Section -->
 					<div class="template-section template-section-padding-reset template-clear-fix template-background-color-1">
-						
+
 						<!-- Call to action -->
 						<div class="template-component-call-to-action">
 							<div class="template-main">
-								<h3>No 1. Car Wash Booking System</h3>
-								<a href="<?php Template::getPageURL('book-your-wash'); ?>" class="template-component-button">Book Appointment</a>
+								<h3>Easy Online Appointments</h3>
+								<a href="<?php Template::getPageURL('booking'); ?>" class="template-component-button">Book Your Detail</a>
 							</div>
 						</div>
-						
+
 					</div>
-					
+
 					<!-- Section -->
 					<div class="template-section template-background-image template-background-image-5 template-background-image-parallax template-color-white template-clear-fix">
-						
+
 						<!-- Mian -->
 						<div class="template-main">
 
@@ -111,301 +66,156 @@
 							<div class="template-component-header-subheader">
 								<h2>Our Process</h2>
 								<div></div>
-								<span>We know your time is valuable</span>
-							</div>	
+								<span>We know your time is valuable!</span>
+							</div>
 
-							<!-- Space -->							
+							<!-- Space -->
 							<div class="template-component-space template-component-space-1"></div>
-							
-							<!-- Process list -->							
+
+							<!-- Process list -->
 							<div class="template-component-process-list template-clear-fix">
-								
+
 								<!-- Layout 25x25x25x25% -->
 								<ul class="template-layout-25x25x25x25 template-clear-fix template-layout-margin-reset">
-									
+
 									<!-- Left column -->
 									<li class="template-layout-column-left">
 										<span class="template-icon-feature-check"></span>
 										<h5>1. Booking</h5>
 										<span class="template-icon-meta-arrow-large-rl"></span>
 									</li>
-									
+
 									<!-- Center left column -->
 									<li class="template-layout-column-center-left">
 										<span class="template-icon-feature-car-check"></span>
-										<h5>2. Inspection</h5>
+										<h5>2. Evaluation</h5>
 										<span class="template-icon-meta-arrow-large-rl"></span>
 									</li>
-									
+
 									<!-- Center right column -->
 									<li class="template-layout-column-center-right">
 										<span class="template-icon-feature-payment"></span>
-										<h5>3. Valuation</h5>
+										<h5>3. Detailing</h5>
 										<span class="template-icon-meta-arrow-large-rl"></span>
 									</li>
-									
+
 									<!-- Right column -->
 									<li class="template-layout-column-right">
 										<span class="template-icon-feature-vacuum-cleaner"></span>
 										<h5>4. Completion</h5>
 									</li>
-									
-								</ul>
-								
-							</div>
-							
-						</div>
-							
-						
-					</div>
-					
-					<!-- Section -->
-					<div class="template-section template-section-padding-1 template-clear-fix template-main">
-						
-						<!-- Header + subheader -->
-						<div class="template-component-header-subheader">
-							<h2>Wash Packages</h2>
-							<div></div>
-							<span>Which wash is the best for your vehicle?</span>
-						</div>	
-						
-						<!-- Booking -->
-						<div class="template-component-booking" id="template-booking">
-
-							<form>
-
-								<ul>
-									
-									<?php Template::includeFile('booking-vehicle-list-2'); ?>
-									<?php Template::includeFile('booking-package-list-2'); ?>
 
 								</ul>
-
-							</form>
-
-						</div>
-						
-						<script type="text/javascript">
-							jQuery(document).ready(function($)
-							{
-								$('#template-booking').booking();
-							});
-						</script>
-						
-					</div>
-					
-					<!-- Section -->
-					<div class="template-section template-section-padding-reset template-clear-fix">
-						
-						<!-- Flex layout 50x50% -->
-						<div class="template-layout-flex template-background-color-1 template-clear-fix">
-
-							<!-- Left column -->
-							<div class="template-background-image template-background-image-1"></div>
-
-							<!-- Right column -->
-							<div class="template-section-padding-1">
-								
-								<!-- Features list -->
-								<div class="template-component-feature-list template-component-feature-list-position-top">
-									
-									<!-- Layout 50x50% -->
-									<ul class="template-layout-50x50 template-clear-fix">
-										
-										<!-- Left column -->
-										<li class="template-layout-column-left">
-											<span class="template-icon-feature-location-map"></span>
-											<h5>Convenience</h5>
-											<p>We are dedicated to providing quality service, customer satisfaction at a great value in multiple locations offering convenient hours.</p>
-										</li>
-										
-										<!-- Right column -->
-										<li class="template-layout-column-right">
-											<span class="template-icon-feature-eco-nature"></span>
-											<h5>Organic products</h5>
-											<p>Our products are eco-friendly and interior products are all organic. We use less than a gallon of water with absolutely zero-waste.</p>											
-										</li>
-										
-										<!-- Left column -->
-										<li class="template-layout-column-left">
-											<span class="template-icon-feature-team"></span>
-											<h5>Experienced Team</h5>
-											<p>Our crew members are all trained and skilled and fully equiped with equipment and supplies needed that we can deliver the best results.</p>											
-										</li>
-										
-										<!-- Right column -->
-										<li class="template-layout-column-right">
-											<span class="template-icon-feature-spray-bottle"></span>
-											<h5>Great Value</h5>
-											<p>We offer multiple services at a great value to meet your needs. We offer a premium service while saving your time and money.</p>											
-										</li>
-										
-									</ul>
-									
-								</div>
 
 							</div>
 
 						</div>
-						
+
+
 					</div>
-					
-					<!-- Section -->
-					<div class="template-section template-clear-fix template-main">
-						
-						<!-- Header + subheader -->
-						<div class="template-component-header-subheader">
-							<h2>Latest Projects</h2>
-							<div></div>
-							<span>Car wash gallery</span>
-						</div>	
-						
-						<?php Template::includeFile('gallery-1'); ?>
-						
-						<!-- Button -->
-						<div class="template-align-center">
-							<a href="<?php Template::getPageURL('gallery'); ?>" class="template-component-button">Browse More Projects</a>
-						</div>
-						
-					</div>		
-					
+
 					<!-- Section -->
 					<div class="template-section template-section-padding-reset template-clear-fix">
-						
+
 						<!-- Flex layout 50x50% -->
 						<div class="template-layout-flex template-clear-fix template-background-color-1">
-							
+
 							<!-- Left column -->
-							<div>
-								
+							<div style="flex-basis: 100%;">
+
 								<!-- Header + subheader -->
 								<div class="template-component-header-subheader">
 									<h2>Testimonials</h2>
 									<div></div>
-									<span>Our customers love us</span>
-								</div>		
-								
-								<!-- Space -->		
-								<div class="template-component-space template-component-space-2"></div>
-								
-								<!-- Testimonials list -->							
+									<span>Our customers love us!</span>
+								</div>
+
+								<!-- Testimonials list -->
 								<div class="template-component-testimonial-list template-clear-fix">
-									
+
 									<!-- Content -->
 									<ul class="template-clear-fix">
 										<li>
-											<p>I could not be happier with the job you did on my car. It looks great. Thank you for your great service and I will continue to refer friends and family to you all.</p>
-											<h6>Dotti Newman</h6>
-											<span>Audi Q5</span>
+											<p>These guys are amazing! They did an excellent job cleaning the interior. Stains from the previous owner was gone and they cleaned all the stickiness and crumbs from the kids. They left me with a brand new car, inside and out! Most definitely would recommend to everyone!</p>
+											<h6 style="margin-top: 20px;">Megan Niravong</h6>
+											<span><i>Google Review</i></span>
 										</li>
-										<li>
-											<p>I think Auto Spa is the best car washers ever. Love the price, convenience and customer service. Thanks so much! My car looks like new. I will definitely come again.</p>
-											<h6>David Magnus</h6>
-											<span>Nissan Titan X5</span>
+										<li style="margin-top: 40px;">
+											<p>I recommend Wet Werks for your detailing needs. Based on the other detailing services out there, Wet Werks detailing was very responsive to my inquiries and provided accurate and reasonable estimates of their scheduling and services.</p>
+											<p style="margin-top: 10px;">The service professional took care of my engine and paid close attention to the small details that I couldn’t have noticed. He was very knowledgeable of the sensitive components of the engine and worked with caution to clean and refresh everything under the hood.</p>
+											<p style="margin-top: 10px;">Although I only purchased the engine detailing services, the approach of patience and excellent customer service will ensure that I will be using Wet Werks services for all my vehicle detailing needs in the futures.</p>
+											<p style="margin-top: 10px;">When your local detailing services don’t answer or return your phone calls, make Wet Werks your next choice and they will be your best choice!</p>
+											<h6 style="margin-top: 20px;">Carey Niravong</h6>
+											<span><i>Google Review</i></span>
 										</li>
-										<li>
-											<p>Finally a car wash that does pay attention to the detail. I have a little extra time and money and I let them do the full detail and it always has turned out great.</p>
-											<h6>Josh Williams</h6>
-											<span>Toyota Avensis</span>
+										<li style="margin-top: 40px;">
+											<p>Recommend Wet Werks Detail for all my cars now. They are very personable and make sure you have the best experience and explain everything they have done.. Will be using them for now on.</p>
+											<h6 style="margin-top: 20px;">Sophia Britt</h6>
+											<span><i>Google Review</i></span>
+										</li>
+										<li style="margin-top: 40px;">
+											<p>Wet werks did a great job detailing my SUV! They were very professional, polite, and attentive to the my concerns. I would highly recommend their services! Thank you!</p>
+											<h6 style="margin-top: 20px;">Billy P</h6>
+											<span><i>Google Review</i></span>
+										</li>
+										<li style="margin-top: 40px;">
+											<p>I hit them up on a last minute appointment but they squeezed me in. Awesome service! Interior was faded red and they brought it back to life! Highly recommended</p>
+											<h6 style="margin-top: 20px;">Andrew Phommaly</h6>
+											<span><i>Google Review</i></span>
 										</li>
 									</ul>
-									
-									<!-- Navigation -->
-									<div class="template-component-testimonial-list-navigation">
-										<a href="#" class="template-component-testimonial-list-navigation-left template-icon-meta-arrow-large-rl"></a>
-										<span class="template-component-testimonial-list-navigation-center template-icon-feature-testimonials"></span>
-										<a href="#" class="template-component-testimonial-list-navigation-right template-icon-meta-arrow-large-rl"></a>
-									</div>
-									
+
 								</div>
-								
+
 							</div>
-							
-							<!-- Right column -->
-							<div class="template-background-image template-background-image-2 template-color-white">
-							
-								<!-- Header + subheader -->
-								<div class="template-component-header-subheader">
-									<h2>Recent News</h2>
-									<div></div>
-									<span>Recent from the blog</span>
-								</div>
-								
-								<!-- Recent posts list -->
-								<ul class="template-component-recent-post">
-									<li>
-										<a href="<?php Template::getPageURL('single-post-right-sidebar'); ?>">
-											<span>How to choose car detailing company</span>
-											<span>April 14, 2015</span>
-										</a>
-									</li>
-									<li>
-										<a href="<?php Template::getPageURL('single-post-right-sidebar'); ?>">
-											<span>Interior car wash and detailing service</span>
-											<span>March 25, 2015</span>
-										</a>
-									</li>
-									<li>
-										<a href="<?php Template::getPageURL('single-post-right-sidebar'); ?>">
-											<span>How to book a car wash online</span>
-											<span>March 05, 2015</span>
-										</a>
-									</li>
-								</ul>
-								
-							</div>
-							
-						</div>
-						
+
 					</div>
-					
+
 					<!-- Section -->
 					<div class="template-section template-section-padding-1 template-clear-fix template-main">
-						
+
 						<!-- Features list -->
 						<div class="template-component-feature-list template-component-feature-list-position-left template-clear-fix">
-							
+
 							<!-- Layout 33x33x33% -->
 							<ul class="template-layout-33x33x33 template-clear-fix">
-								
+
 								<!-- Left column -->
 								<li class="template-layout-column-left">
 									<span class="template-icon-feature-phone-circle"></span>
-									<h5>Call Us At</h5>
+									<h5>Contact </h5>
 									<p>
-										(+505) 122 225 225<br/>
-										(+505) 122 225 224<br/>
+										(615) 971-0199<br/>
+										<i>Text messages are preferred.</i>
 									</p>
 								</li>
-								
+
 								<!-- Center column -->
 								<li class="template-layout-column-center">
-									<span class="template-icon-feature-location-map"></span>
-									<h5>Our Address</h5>
+									<span class="template-icon-feature-mail-map"></span>
+									<h5>Our Email</h5>
 									<p>
-										464 Rhode Island Av.<br/>
-										Portland, OR 97219
+										General<br/>
+										<a href="mailto:contact@wetwerksdetail.com">contact@wetwerksdetail.com</a>
+										<br/>Booking<br/>
+										<a href="mailto:booking@wetwerksdetail.com">booking@wetwerksdetail.com</a>
 									</p>
 								</li>
-								
+
 								<!-- Right column -->
 								<li class="template-layout-column-right">
 									<span class="template-icon-feature-clock"></span>
 									<h5>Working hours</h5>
 									<p>
-										Monday - Friday: 8 am - 6 pm<br/>
-										Saturday: 8 am - 3 pm
+										8:00 AM - 4:00 PM<br/>
+										<i>Holiday hours may vary.</i>
 									</p>
 								</li>
-								
+
 							</ul>
+
 						</div>
-						
+
 					</div>
-					
-					<!-- Google Maps -->
-					<div class="template-section template-section-padding-reset template-clear-fix">
-						<?php Template::includeFile('google-map-1'); ?>
-					</div>
-					
+
 				</div>
