@@ -94,14 +94,14 @@
 
 									<!-- Center right column -->
 									<li class="template-layout-column-center-right">
-										<span class="template-icon-feature-payment"></span>
+										<span class="template-icon-feature-spray-bottle"></span>
 										<h5>3. Detailing</h5>
 										<span class="template-icon-meta-arrow-large-rl"></span>
 									</li>
 
 									<!-- Right column -->
 									<li class="template-layout-column-right">
-										<span class="template-icon-feature-vacuum-cleaner"></span>
+										<span class="template-icon-feature-payment"></span>
 										<h5>4. Completion</h5>
 									</li>
 
