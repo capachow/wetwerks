@@ -26,7 +26,7 @@
 									<span class="template-icon-feature-phone-circle"></span>
 									<h5>Contact </h5>
 									<p>
-										(615) 971-0199<br/>
+										(615) 713-7421<br/>
 										<i>Text messages are preferred.</i>
 									</p>
 								</li>
