@@ -1,0 +1,154 @@
+:root {
+  --primary: #199CDB;
+  --primary-invert: #E66324;
+}
+
+body {
+  color: #9EAAB0;
+  background-color: #F5F5F5;
+}
+
+body > div.page {
+  display: flex;
+  height: 100%;
+  flex-flow: column nowrap;
+}
+
+main a.button {
+  color: #FFFFFF;
+  background-color: var(--primary);
+  border-color: transparent;
+}
+
+header.main,
+footer.main {
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+header.main {
+  position: fixed;
+  width: 100%;
+  text-transform: uppercase;
+  flex-flow: row nowrap;
+  transition: background-color 0.2s ease;
+  z-index: 10;
+}
+
+header.main:not(.scroll) {
+  color: #FFFFFF !important;
+}
+
+header.main:not(.scroll) a.logo,
+header.main:not(.scroll) a.current {
+  color: var(--primary-invert) !important;
+}
+
+header.main:not(.scroll) + main a.button {
+  background-color: var(--primary-invert) !important;
+}
+
+header.main.scroll {
+  background-color: #FFFFFF;
+}
+
+header.main a.logo {
+  display: flex;
+  margin-right: auto;
+  color: var(--primary);
+}
+
+header.main a.logo > h4 {
+  margin-top: 0px;
+  font-weight: 900;
+}
+
+header.main a.logo > svg {
+  height: 30px;
+  margin: -3px 0px;
+  margin-right: 20px;
+}
+
+header.main nav.site {
+  margin-right: 40px;
+  font-weight: 700;
+}
+
+header.main nav.site a.current {
+  color: var(--primary);
+}
+
+header.main nav > *:not(:first-child) {
+  margin-left: 20px;
+}
+
+header.main svg,
+footer.main svg {
+  height: 24px;
+}
+
+main.content {
+  flex: 1 0 auto;
+  height: 1000px;
+  text-align: center;
+}
+
+main.content > section h2,
+main.content > section h3 {
+  color: #2C2E30;
+}
+
+main.content > figure {
+  display: flex;
+  position: relative;
+  color: #FFFFFF;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+main.content > figure:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(180deg, #000000 0%, transparent 100%);
+  opacity: 0.8;
+}
+
+main.content > figure > img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  transform: translate(-50%, 0px);
+  pointer-events: none;
+  z-index: -1;
+}
+
+main.content > * {
+  padding: 60px 40px;
+}
+
+main.content > *:first-child {
+  padding-top: 164px;
+}
+
+main.content *.lead {
+  height: 100vh;
+}
+
+footer.main {
+  background-color: #2C2E30;
+  flex-flow: column nowrap;
+}
+
+footer.main nav > * {
+  margin: 0px 10px;
+}

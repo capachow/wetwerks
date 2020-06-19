@@ -1,0 +1,113 @@
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-family: 'Lato', san-serif;
+  font-size: 16px;
+  font-weight: 400;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  line-height: 1.4em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:first-child {
+  margin-top: 0px;
+}
+
+a {
+  display: inline-flex;
+  color: inherit;
+  text-decoration: none;
+  align-items: center;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  letter-spacing: 1px;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  margin: 20px 0px 0px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 62px;
+  font-weight: 900;
+}
+
+h1 + button,
+h1 + a.button {
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p {
+  margin: 20px 0px 0px;
+}
+
+p + p {
+  margin-top: 10px;
+}
+
+figure {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+svg {
+  width: auto;
+  height: 1em;
+  fill: currentcolor;
+  flex-shrink: 0;
+}
+
+button,
+a.button {
+  display: inline-flex;
+  margin-top: 20px;
+  padding: 15px 30px 15px 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 100em;
+  transition: background-color 0.2s ease;
+}
