@@ -1,11 +1,15 @@
 :root {
   --primary: #199CDB;
-  --primary-invert: #E66324;
 }
 
 body {
-  color: #9EAAB0;
-  background-color: #F5F5F5;
+  color: #656262;
+  background-color: #FFFFFF;
+}
+
+body:not(.scroll) header.main {
+  color: #F5F5F5;
+  background-color: transparent;
 }
 
 body > div.page {
@@ -14,16 +18,39 @@ body > div.page {
   flex-flow: column nowrap;
 }
 
+main hr {
+  background-color: #9EAAB0;
+  opacity: 0.3;
+}
+
+main a:not(.button):not(.ignore) {
+  color: var(--primary);
+}
+
 main a.button {
   color: #FFFFFF;
   background-color: var(--primary);
   border-color: transparent;
 }
 
+main i {
+  color: #9EAAB0;
+}
+
+main *.split {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+main *.split > * {
+  flex: 1 1 auto;
+}
+
 header.main,
 footer.main {
   display: flex;
-  padding: 40px;
+  color: #9EAAB0;
   align-items: center;
   flex-shrink: 0;
 }
@@ -31,27 +58,12 @@ footer.main {
 header.main {
   position: fixed;
   width: 100%;
+  padding: 40px;
   text-transform: uppercase;
+  background-color: #F5F5F5;
   flex-flow: row nowrap;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s linear;
   z-index: 10;
-}
-
-header.main:not(.scroll) {
-  color: #FFFFFF !important;
-}
-
-header.main:not(.scroll) a.logo,
-header.main:not(.scroll) a.current {
-  color: var(--primary-invert) !important;
-}
-
-header.main:not(.scroll) + main a.button {
-  background-color: var(--primary-invert) !important;
-}
-
-header.main.scroll {
-  background-color: #FFFFFF;
 }
 
 header.main a.logo {
@@ -67,20 +79,25 @@ header.main a.logo > h4 {
 
 header.main a.logo > svg {
   height: 30px;
-  margin: -3px 0px;
-  margin-right: 20px;
+  margin: -3px 15px -3px 0px !important;
 }
 
-header.main nav.site {
+header.main > menu {
   margin-right: 40px;
   font-weight: 700;
+}
+
+header.main > menu [href='#menu'] {
+  position: relative;
+  display: none;
+  z-index: 20;
 }
 
 header.main nav.site a.current {
   color: var(--primary);
 }
 
-header.main nav > *:not(:first-child) {
+header.main nav > a:not(:first-child) {
   margin-left: 20px;
 }
 
@@ -90,21 +107,30 @@ footer.main svg {
 }
 
 main.content {
-  flex: 1 0 auto;
-  height: 1000px;
+  display: flex;
   text-align: center;
+  flex: 1 0 auto;
+  flex-flow: column nowrap;
 }
 
-main.content > section h2,
-main.content > section h3 {
-  color: #2C2E30;
+main.content > * {
+  position: relative;
+  overflow: hidden;
+}
+
+main.content > *:not(.iframe) {
+  padding: 60px 10vw;
+}
+
+main.content > *:first-child {
+  padding-top: 164px;
+  padding-bottom: 104px;
 }
 
 main.content > figure {
   display: flex;
   position: relative;
   color: #FFFFFF;
-  overflow: hidden;
   align-items: center;
   justify-content: center;
 }
@@ -114,10 +140,15 @@ main.content > figure:before {
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 100%;
-  height: 50%;
+  width: 100vw;
+  height: 50vh;
   background: linear-gradient(180deg, #000000 0%, transparent 100%);
   opacity: 0.8;
+  z-index: -1;
+}
+
+main.content > figure.stretch {
+  min-height: 100vh;
 }
 
 main.content > figure > img {
@@ -129,26 +160,105 @@ main.content > figure > img {
   object-fit: cover;
   transform: translate(-50%, 0px);
   pointer-events: none;
+  z-index: -2;
+}
+
+main.content > section.split {
+  padding: 60px 5vw;
+}
+
+main.content > section.split > * {
+  padding: 0px 5vw;
+}
+
+main.content > section.iframe {
+  flex-grow: 1;
+}
+
+main.content > section.iframe:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 32px;
+  background-color: var(--primary);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M456.433 371.72l-27.79-16.045c-7.192-4.152-10.052-13.136-6.487-20.636 25.82-54.328 23.566-118.602-6.768-171.03-30.265-52.529-84.802-86.621-144.76-91.424C262.35 71.922 256 64.953 256 56.649V24.56c0-9.31 7.916-16.609 17.204-15.96 81.795 5.717 156.412 51.902 197.611 123.408 41.301 71.385 43.99 159.096 8.042 232.792-4.082 8.369-14.361 11.575-22.424 6.92z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M456.433 371.72l-27.79-16.045c-7.192-4.152-10.052-13.136-6.487-20.636 25.82-54.328 23.566-118.602-6.768-171.03-30.265-52.529-84.802-86.621-144.76-91.424C262.35 71.922 256 64.953 256 56.649V24.56c0-9.31 7.916-16.609 17.204-15.96 81.795 5.717 156.412 51.902 197.611 123.408 41.301 71.385 43.99 159.096 8.042 232.792-4.082 8.369-14.361 11.575-22.424 6.92z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+  transform: rotate(0) translate(-50%, -50%);
+  transform-origin: top left;
+  animation: spin 0.8s infinite linear;
   z-index: -1;
 }
 
-main.content > * {
-  padding: 60px 40px;
+@keyframes spin {
+  100% {
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
 }
 
-main.content > *:first-child {
-  padding-top: 164px;
+main.content > section h2,
+main.content > section h3,
+main.content > section h4 {
+  color: #2C2E30;
 }
 
-main.content *.lead {
-  height: 100vh;
+main.content > section h5,
+main.content > section svg {
+  color: var(--primary);
+}
+
+main.content > section h5 {
+  margin-top: 30px;
 }
 
 footer.main {
+  padding: 60px 40px;
   background-color: #2C2E30;
   flex-flow: column nowrap;
 }
 
-footer.main nav > * {
+footer.main nav > a {
   margin: 0px 10px;
+}
+
+@media screen and (max-width: 768px) {
+  body:not(.scroll) header.main menu.open {
+    color: #9EAAB0;
+  }
+
+  main *.split {
+    display: block;
+  }
+
+  main *.split > * {
+    margin-top: 60px;
+  }
+
+  header.main > menu [href='#menu'],
+  header.main > menu.open nav.site {
+    display: block;
+  }
+
+  header.main > menu.open [href='#menu'] {
+    color: var(--primary);
+  }
+  
+  header.main nav.site {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    display: none;
+    padding: 40px 84px 40px 44px;
+    background-color: #F5F5F5;
+  }
+  
+  header.main nav.site > a:not(:first-child) {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
+  header.main > menu nav.site {
+    display: none;
+  }
 }

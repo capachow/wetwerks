@@ -16,24 +16,29 @@
           <?= $icon('car'); ?>
           <h4>Wet Werks Detail</h4>
         </a>
-        <nav class="site">
+        <menu>
+          <?= $anchor($icon('menu'), '#menu'); ?>
+          <nav class="site">
+            <?php foreach([
+              'Home' => '/',
+              'Booking' => '/booking/',
+              'Contact' => '/contact/'
+            ] as $text => $link) { ?>
+              <?= $anchor($text, path($link), [
+                'class' => $if(trim($link, '/') == path(1), 'current')
+              ]); ?>
+            <?php } ?>
+          </nav>
+        </menu>
+        <nav class="social">
           <?php foreach([
-            'Home' => '/',
-            'Booking' => '/booking/',
-            'Contact' => '/contact/'
-          ] as $text => $link) { ?>
-            <?= $anchor($text, path($link), [
-              'class' => $if(trim($link, '/') == path(1), 'current')
+            'facebook' => 'https://facebook.com/wetwerksdetail',
+            'instagram' => 'https://instagram.com/wetwerksdetail'
+          ] as $type => $link) { ?>
+            <?= $anchor($icon($type), $link, [
+              'target' => '_blank'
             ]); ?>
           <?php } ?>
-        </nav>
-        <nav class="social">
-          <a href="https://facebook.com/wetwerksdetail" target="_blank">
-            <?= $icon('facebook'); ?>
-          </a>
-          <a href="https://instagram.com/wetwerksdetail" target="_blank">
-            <?= $icon('instagram'); ?>
-          </a>
         </nav>
       </header>
       <main class="content">
@@ -41,14 +46,18 @@
       </main>
       <footer class="main">
         <nav class="social">
-          <a href="https://facebook.com/wetwerksdetail" target="_blank">
-            <?= $icon('facebook'); ?>
-          </a>
-          <a href="https://instagram.com/wetwerksdetail" target="_blank">
-            <?= $icon('instagram'); ?>
-          </a>
+          <?php foreach([
+            'facebook' => 'https://facebook.com/wetwerksdetail',
+            'instagram' => 'https://instagram.com/wetwerksdetail'
+          ] as $type => $link) { ?>
+            <?= $anchor($icon($type), $link, [
+              'target' => '_blank'
+            ]); ?>
+          <?php } ?>
         </nav>
-        <p>&copy; Copyright <?= date('Y'); ?> Wet Werks Detail</p>
+        <p>&copy; Copyright <?= date('Y'); ?> Wet Werks Detail &middot; Built with <?= $anchor('Arcane', 'https://arcane.dev', [
+          'target' => '_blank'
+        ]); ?></p>
       </footer>
     </main>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
