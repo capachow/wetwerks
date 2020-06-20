@@ -6,17 +6,30 @@ $(window).on('load scroll', function() {
 });
 
 $('[href="#menu"]').on('click', function(event) {
-  event.preventDefault();
-
   $(this).parent().toggleClass('open');
+
+  event.preventDefault();
 });
 
-$('.parallax').each(function() {
-  var image = $(this);
+$(window).on('load scroll', function() {
+  let viewport = { element: $(this) };
 
-  $(window).on('load scroll', function() {
-    var scrolled = $(this).scrollTop();
+  viewport.height = viewport.element.height();
+  viewport.scrolled = viewport.element.scrollTop();
 
-    image.css('top', `${scrolled}px`);
+  $('img.parallax').each(function() {
+    let image = { element: $(this) }
+
+    image.figure = image.element.parent();
+    image.height = image.figure.outerHeight();
+    image.offset = image.figure.offset().top;
+
+    image.top = viewport.scrolled - image.offset;
+
+    if(image.top + viewport.height > 0) {
+      if(viewport.scrolled <= (image.offset + image.height)) {
+        image.element.css('top', image.top);
+      }
+    }
   });
 });

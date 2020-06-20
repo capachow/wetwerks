@@ -5,7 +5,6 @@
     <?= $anchor('Schedule Now', path('/booking/'), [
       'class' => 'button'
     ]); ?>
-    <?= $icon('chevron'); ?>
   </figcaption>
   <img src="<?= path('/images/21712.jpg'); ?>" class="parallax" />
 </figure>

@@ -123,6 +123,10 @@ main.content > *:first-child {
   padding-bottom: 80px;
 }
 
+main.content > * h5 {
+  margin-top: 30px;
+}
+
 main.content > figure {
   display: flex;
   position: relative;
@@ -131,12 +135,12 @@ main.content > figure {
   justify-content: center;
 }
 
-main.content > figure:before {
+main.content > figure:first-child:before {
   content: '';
   position: absolute;
   top: 0px;
+  right: 0px;
   left: 0px;
-  width: 100vw;
   height: 50vh;
   background: linear-gradient(180deg, #000000 0%, transparent 100%);
   opacity: 0.8;
@@ -151,6 +155,7 @@ main.content > figure > img {
   position: absolute;
   top: 0px;
   left: 50%;
+  min-width: 100%;
   height: 100vh;
   object-fit: cover;
   transform: translate(-50%, 0px);
@@ -199,10 +204,6 @@ main.content > section h4 {
 main.content > section h5,
 main.content > section svg {
   color: var(--primary);
-}
-
-main.content > section h5 {
-  margin-top: 30px;
 }
 
 footer.main {
