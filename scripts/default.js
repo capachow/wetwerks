@@ -1,6 +1,6 @@
 $(window).on('load scroll', function() {
   let header = $('header.main');
-  let distance = $(this).scrollTop() > header.outerHeight();
+  let distance = $(this).scrollTop() > header.height();
 
   $('body').toggleClass('scroll', distance);
 });

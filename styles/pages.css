@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
   height: 100%;
 }
 
@@ -13,13 +12,13 @@ html {
 }
 
 body {
+  min-width: 360px;
   line-height: 1.4em;
 }
 
 * {
   margin: 0px;
   padding: 0px;
-  vertical-align: middle;
   box-sizing: border-box;
 }
 
@@ -28,16 +27,12 @@ body {
 }
 
 menu, nav {
-  position: relative;
-}
-
-nav {
   display: flex;
+  position: relative;
   letter-spacing: 1px;
 }
 
-h1, h2, h3,
-h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
   margin: 20px 0px 0px;
   line-height: 1.2em;
@@ -125,8 +120,7 @@ svg:not(:only-child):last-child {
   margin-left: 10px;
 }
 
-button,
-a.button {
+button, a.button {
   display: inline-flex;
   margin-top: 40px;
   padding: 15px 30px 15px 30px;
@@ -139,8 +133,25 @@ a.button {
   transition: background-color 0.2s ease;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 780px) {
   h1 {
     font-size: 42px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  hr {
+    margin-top: 20px;
+  }
+
+  p:first-of-type,
+  button, a.button {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  h1 {
+    font-size: 38px;
   }
 }

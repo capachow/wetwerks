@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="Our mission is to consistently provide quality service and workmanship to our clients. We provide our residential accounts with a friendly, professional, and specialized service to their vehicles. We offer services such as; Full Detailing, Interior, and Exterior packages. Make your one stop detail shop." />
     <title>Wet Werks Detail</title>
+    <link rel="icon" type="image/png" href="<?= path('images/favicon.png'); ?>" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,400italic,700,900" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Serif:400italic" />
     <?= STYLES; ?>
@@ -55,9 +56,12 @@
             ]); ?>
           <?php } ?>
         </nav>
-        <p>&copy; Copyright <?= date('Y'); ?> Wet Werks Detail &middot; Built with <?= $anchor('Arcane', 'https://arcane.dev', [
-          'target' => '_blank'
-        ]); ?></p>
+        <p>
+          <span>&copy; Copyright <?= date('Y'); ?> Wet Werks Detail</span>
+          <span>Built with <?= $anchor('Arcane', 'https://arcane.dev', [
+            'target' => '_blank'
+          ]); ?></span>
+        </p>
       </footer>
     </main>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
