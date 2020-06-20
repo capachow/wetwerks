@@ -5,7 +5,7 @@
   <img src="<?= path('/images/21712.jpg'); ?>" class="parallax" />
 </figure>
 
-<section class="split">
+<section class="contact split">
   <article>
     <h3><?= $icon('office'); ?><span>Phone</span></h3>
     <p><?= $anchor('(615) 713-7421', 'tel:1-615-713-7421', [

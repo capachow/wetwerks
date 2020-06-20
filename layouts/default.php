@@ -57,6 +57,9 @@
           <?php } ?>
         </nav>
         <p>
+          <?= $anchor('(615) 713-7421', 'tel:1-615-713-7421'); ?>
+          <?= $anchor('Book Your Detail', '/booking/'); ?>
+          <br />
           <span>&copy; Copyright <?= date('Y'); ?> Wet Werks Detail</span>
           <span>Built with <?= $anchor('Arcane', 'https://arcane.dev', [
             'target' => '_blank'

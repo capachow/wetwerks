@@ -1,0 +1,36 @@
+figure.process section.steps > * {
+  min-width: calc(100% / 4);
+  margin-top: 40px !important;
+  padding: 20px 0px;
+}
+
+figure.process section.steps svg {
+  height: 70px;
+  margin-right: 0px;
+}
+
+section.reviews > article {
+  margin-top: 40px;
+}
+
+section.reviews > article > h5 {
+  margin-top: 20px;
+  color: #199CDB;
+}
+
+@media screen and (max-width: 940px) {
+  figure.process section.steps {
+    flex-wrap: wrap;
+  }
+
+  figure.process section.steps > * {
+    min-width: calc(100% / 2);
+    flex-basis: calc(50%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  figure.process section.steps {
+    display: block;
+  }
+}

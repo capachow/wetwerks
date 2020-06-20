@@ -1,0 +1,30 @@
+section.contact > * {
+  min-width: calc(100% / 3);
+}
+
+@media screen and (max-width: 940px) {
+  section.contact {
+    padding-right: 40px;
+    padding-left: 40px;
+    flex-wrap: wrap;
+  }
+
+  section.contact > * {
+    min-width: calc(100% / 2);
+  }
+
+  section.contact > *:nth-child(2) {
+    margin-top: 60px;
+    order: 3;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  section.contact {
+    display: block;
+  }
+
+  section.contact > * {
+    margin-top: 60px;
+  }
+}

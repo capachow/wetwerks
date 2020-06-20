@@ -11,7 +11,7 @@ $('[href="#menu"]').on('click', function(event) {
   event.preventDefault();
 });
 
-$(window).on('load scroll', function() {
+$(window).on('load scroll resize', function() {
   let viewport = { element: $(this) };
 
   viewport.height = viewport.element.height();
