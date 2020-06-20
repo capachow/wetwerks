@@ -3,6 +3,7 @@
 }
 
 body {
+  min-width: 360px;
   color: #656262;
   background-color: #FFFFFF;
 }
@@ -58,6 +59,7 @@ footer.main {
 header.main {
   position: fixed;
   width: 100%;
+  min-width: 360px;
   padding: 40px;
   text-transform: uppercase;
   background-color: #F5F5F5;
@@ -117,8 +119,8 @@ main.content > *:not(.iframe) {
 }
 
 main.content > *:first-child {
-  padding-top: 164px;
-  padding-bottom: 104px;
+  padding-top: 140px;
+  padding-bottom: 80px;
 }
 
 main.content > figure {
@@ -147,9 +149,8 @@ main.content > figure.stretch {
 
 main.content > figure > img {
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 50%;
-  width: 100vw;
   height: 100vh;
   object-fit: cover;
   transform: translate(-50%, 0px);
@@ -297,19 +298,22 @@ footer.main > p > span:not(:first-child):before {
   }
 
   main.content > *:not(.iframe) {
-    padding: 50px 30px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   main.content > *:first-child {
-    padding-top: 144px;
-    padding-bottom: 84px;
+    padding-top: 120px;
+    padding-bottom: 70px;
   }
 
-  main.content > section.split > * {
-    margin-top: 50px;
+  main.content > section h5 {
+    margin-top: 20px;
   }
+}
 
+@media screen and (max-width: 380px) {
   footer.main {
-    padding: 50px 30px;
+    padding: 40px 30px;
   }
 }

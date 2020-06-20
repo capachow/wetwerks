@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Our mission is to consistently provide quality service and workmanship to our clients. We provide our residential accounts with a friendly, professional, and specialized service to their vehicles. We offer services such as; Full Detailing, Interior, and Exterior packages. Make your one stop detail shop." />
     <title>Wet Werks Detail</title>
     <link rel="icon" type="image/png" href="<?= path('images/favicon.png'); ?>" />
