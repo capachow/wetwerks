@@ -43,8 +43,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 > svg, h2 > svg, h3 > svg,
 h4 > svg, h5 > svg, h6 > svg {
-  margin-top: 0.1em !important;
   margin-bottom: 0.1em !important;
+  vertical-align: text-bottom;
 }
 
 h1 {
@@ -114,7 +114,6 @@ figure {
 svg {
   width: auto;
   height: 1em;
-  vertical-align: text-bottom;
   fill: currentcolor;
   flex-shrink: 0;
 }
