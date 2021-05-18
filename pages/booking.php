@@ -1,3 +1,5 @@
+<?php define('REDIRECT', '/contact/'); ?>
+
 <figure>
   <figcaption>
     <h2>Book your Detail</h2>

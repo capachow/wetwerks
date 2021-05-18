@@ -22,7 +22,7 @@
           <nav class="site">
             <?php foreach([
               'Home' => '/',
-              'Booking' => '/booking/',
+              // 'Booking' => '/booking/',
               'Contact' => '/contact/'
             ] as $text => $link) { ?>
               <?= $anchor($text, path($link), [
